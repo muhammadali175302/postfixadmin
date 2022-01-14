@@ -36,9 +36,9 @@ if [ ! -f composer.phar ]; then
     fi
 fi
 
-echo " * Running composer install --no-dev"
+echo " * Running composer install"
 
-php composer.phar install --prefer-dist -n --no-dev
+php composer.phar install --prefer-dist
 
 
 if [ ! -d templates_c ]; then
